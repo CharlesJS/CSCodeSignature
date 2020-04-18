@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28F83F5224497322008BD2DC /* CSCodeSigningInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F83F5124497322008BD2DC /* CSCodeSigningInfo.swift */; };
 		28F83F7F244ACB48008BD2DC /* CSErrors in Frameworks */ = {isa = PBXBuildFile; productRef = 28F83F7E244ACB48008BD2DC /* CSErrors */; };
+		28F83F8A244BAFC1008BD2DC /* CSCodeSignature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F83F89244BAFC1008BD2DC /* CSCodeSignature.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28F83F452449730C008BD2DC /* libCSCodeSignature.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCSCodeSignature.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		28F83F5124497322008BD2DC /* CSCodeSigningInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSCodeSigningInfo.swift; sourceTree = "<group>"; };
 		28F83F81244B7A83008BD2DC /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		28F83F83244B8D11008BD2DC /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		28F83F89244BAFC1008BD2DC /* CSCodeSignature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CSCodeSignature.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +51,7 @@
 		28F83F472449730C008BD2DC /* CSCodeSignature */ = {
 			isa = PBXGroup;
 			children = (
-				28F83F5124497322008BD2DC /* CSCodeSigningInfo.swift */,
+				28F83F89244BAFC1008BD2DC /* CSCodeSignature.swift */,
 			);
 			path = CSCodeSignature;
 			sourceTree = "<group>";
@@ -159,7 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28F83F5224497322008BD2DC /* CSCodeSigningInfo.swift in Sources */,
+				28F83F8A244BAFC1008BD2DC /* CSCodeSignature.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

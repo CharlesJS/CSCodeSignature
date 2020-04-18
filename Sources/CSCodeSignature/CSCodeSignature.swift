@@ -1,5 +1,5 @@
 //
-//  CSCodeSigningInfo.swift
+//  CSCodeSignature.swift
 //
 //  Created by Charles Srstka on 10/12/13.
 //
@@ -58,7 +58,7 @@ public struct CodeSignature {
 
     public var isValid: Bool { if case .valid = self.status { return true } else { return false } }
 
-    public init(url: URL) throws {
+    public init(at url: URL) throws {
         let code = try CodeSignature.getStaticCode(url: url)
 
         let status = CodeSignature.getStatus(code: code, url: url)
