@@ -77,7 +77,7 @@ public struct CodeSignature {
         let err = SecStaticCodeCreateWithPath(url as CFURL, [], &code)
 
         if err != errSecSuccess {
-            throw OSStatusError(err, url: url)
+            throw osStatusError(err, url: url)
         }
 
         guard let unwrappedCode = code else {
@@ -98,7 +98,7 @@ public struct CodeSignature {
             error?.release()
             return .notSigned
         default:
-            return .invalid(OSStatusError(err, url: url, underlying: error?.takeRetainedValue()))
+            return .invalid(osStatusError(err, url: url, underlying: error?.takeRetainedValue()))
         }
     }
 
@@ -132,7 +132,7 @@ public struct CodeSignature {
         let err = SecCodeCopySigningInformation(code, flags, &cfInfo)
 
         if err != errSecSuccess {
-            throw OSStatusError(err, url: url)
+            throw osStatusError(err, url: url)
         }
 
         guard let info = cfInfo as? [AnyHashable: Any] else { throw CocoaError(.fileReadUnknown) }
